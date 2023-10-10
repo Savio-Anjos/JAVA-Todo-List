@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @PostMapping("/")
     public void create(@RequestBody UserModel userModel) {
-        System.out.print(userModel.name);
+        System.out.print(userModel.getUsername());
     }
 
 }
